@@ -90,6 +90,7 @@ header{
     height: 100px;
     line-height: 0.28;
     margin-top: 29px;
+    border-radius: 15px;
 
 }
 
@@ -145,11 +146,13 @@ header{
 .contacto{
     background-color: #ded6c0;
     color: #d03b40;
+    min-height: 700px;
 }
 
 .ubicacion{
     color: #ded6c0;
     background-color: #d03b40;
+    min-height: 700px;
 }
 
 /*Footer*/
