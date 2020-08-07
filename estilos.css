@@ -42,6 +42,10 @@ span{
     font-weight: 800;
 }
 
+a{
+    text-decoration: none;
+    color: #f5f0ed;
+}
 /*Sección Principal*/
 .seccion-principal{
     background-image: url(./Imágenes/Fondo1.jpg);
@@ -91,7 +95,7 @@ header{
     line-height: 0.28;
     margin-top: 29px;
     border-radius: 15px;
-
+    cursor: pointer;
 }
 
 .nav-linea{
@@ -132,9 +136,33 @@ header{
     
 }
 
+.seccion-desayunar a{
+    display: block;
+    text-decoration: none;
+    margin: 30px auto;
+    color: #f5f0ed;
+    border: 5px solid #f5f0ed;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px 70px;
+    cursor: pointer;
+    transition: background-color 1s, color 2s, margin-top 1s ease-in-out;
+
+}
+
+.seccion-desayunar a:hover{
+    background-color: rgba(245, 240, 237, 0.7);
+    margin-top: 20px;
+    color: #241d1b;
+}
+
 /*Sección Features*/
 .seccion-features{
     background-color: #f5f0ed;
+}
+
+.seccion-features .caja-de-texto{
+    padding: 70px;
 }
 
 .feature img{

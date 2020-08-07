@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Café Oslo</title>
         <link rel="stylesheet" href="./reset.css" type="text/css">
         <link rel="stylesheet" href="./estilos.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
                     <div class="nav-linea"></div>
                     <div class="nav-linea"></div>
                 </div>
-                <nav>
+                <nav id="menu" class="menu-desplegado">
                     <ul>
                         <li>
                             <a href="">EL ESPACIO</a>
@@ -80,11 +80,13 @@
        <section class="seccion-desayunar" >
            <div class="caja-de-texto">
                 <h2>VEN A DESAYUNAR</h2>
+                <h2 id="separador">__________</h2>
                 <p>
                     Bonbon topping I love sweet roll I love
                     candy icing chocolate jelly. Pie soufflé
                     sweet. Apple pie bonbon caramels powder.
                 </p>
+                <a href="#">DESCUBRE NUESTROS PRODUCTOS</a>
            </div>
        </section>
 
@@ -145,8 +147,8 @@
        </section>
 
        <!--Contacto-->
-       <section class="contacto">
-            <div id="contacta-con-nosotros" class="caja-de-texto">
+       <section class="seccion-contacto">
+            <div class="contacto caja-de-texto">
                 <h2>CONTACTA CON NOSOTROS</h2>
                 <h3>
                     Si quieres hacer una reserva, tienes alguna sugerencia o 
@@ -170,6 +172,8 @@
            <p>Agosto 2021</p>
            <p>Todos los derechos reservados</p>
        </footer>
+
+       <script src="./javascript.js"></script>
     </body>
     
 </html>
