@@ -10,32 +10,23 @@ html{
 h1{
     font-size: 44px;
     font-weight: 800;
-    text-align: center;
 }
 
 h2{
     font-size: 28px;
     font-weight: 800;
-    text-align: center;
-    padding: 0px 140px;
 }
 
 h3{
     font-size: 24px;
     text-align: center;
     line-height: 1.3;
-    margin-top: 60px
 }
 
 p{
     font-size: 16px;
     text-align: center;
     line-height: 1.5;
-    margin-top: 60px
-}
-
-nav{
-    display: none;
 }
 
 span{
@@ -46,151 +37,148 @@ a{
     text-decoration: none;
     color: #f5f0ed;
 }
-/*Sección Principal*/
-.seccion-principal{
-    background-image: url(./Imágenes/Fondo1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    color: #f5f0ed;
-    min-height: 600px;
-}
 
-.seccion-principal .caja-de-texto{
-    margin: 100px 180px 0px;
-    padding: 0;
-    padding-bottom: 100px;
+/*Block*/
+.block{
+    max-width: 100%;
+    overflow: hidden;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-
-#separador{
-    margin-top: 15px;
-    margin-bottom: 40px;
-}
-
-header{
-    display: block;
-    width: 90%;
-    height: 200px;
-    margin: 0 auto;
-    padding-top: 60px;  
-}
-
-#logo{
-    display: block;
-    float: left;
-}
-
-#logo img{
-    width: 500px;
-    height: auto;
-}
-
-#nav-burger{
-    display: block;
-    float: right;
-    background-color: #d03b40;
-    color: #f5f0ed;
-    width: 100px;
-    height: 100px;
-    line-height: 0.28;
-    margin-top: 29px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.nav-linea{
-    width: 80%;
-    height: 8px;
-    background-color: #f5f0ed;
-    margin: 19px auto;
-    border-radius: 15px;
-}
-
-/*Sección Ven al Brunch*/
-.seccion-brunch{
-    background-color: #d03b40;
-    color: #f5f0ed;
-    min-height: 600px;
-}
-
-
-/*Sección Celebra Tus Fiestas*/
-.seccion-fiestas{
-    background-color: #ded6c0;
-    color: #d03b40;
-    min-height: 600px;
-}
-/*Cajas de las dos secciones anteriores*/
-.caja-de-texto{
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 120px 70px;
-}
-
-/*Sección ven a Desayunar*/
-.seccion-desayunar{
-    background-image: url(./Imágenes/Fondo2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ded6c0;
-    
-}
-
-.seccion-desayunar a{
-    display: block;
-    text-decoration: none;
-    margin: 30px auto;
-    color: #f5f0ed;
-    border: 5px solid #f5f0ed;
+.block__texto{
     text-align: center;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 20px 70px;
-    cursor: pointer;
-    transition: background-color 1s, color 2s, margin-top 1s ease-in-out;
-
+    margin: 40px 10%;
+}
+.block__separador{
+    margin: 30px auto;
 }
 
-.seccion-desayunar a:hover{
-    background-color: rgba(245, 240, 237, 0.7);
-    margin-top: 20px;
-    color: #241d1b;
+.block__parrafo{
+    margin-top: 40px;
 }
 
-/*Sección Features*/
-.seccion-features{
+    /*Modificadores*/
+    .block_white-text{
+        color: #f5f0ed;
+    }
+
+    .block_red-text{
+        color: #d03b40;
+    }
+
+    .block_background1{
+        background-image: url(./Imágenes/Fondo1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .block_background2{
+        background-image: url(./Imágenes/Fondo2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .block_redbg{
+        background-color: #d03b40;
+    }
+
+    .block_graybg{
+        background-color: #241d1b;
+    }
+
+    .block_beigebg{
+        background-color: #ded6c0;
+    }
+
+    .block_whitebg{
+        background-color: #f5f0ed;
+    }
+
+    .block_big{
+        min-height: 600px;
+    }
+
+/*Header*/
+.header{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*navburger*/
+ .navburger{
+     cursor: pointer;
+     width: 40px;
+     height: 40px;
+     background-color: #d03b40;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .navburger__line{
+     width: 80%;
+     height: 3px;
+     margin: 3px auto;
+     border-radius: 15px;
+     background-color: #f5f0ed;
+ }
+
+/*Nav ul*/
+.nav__ul{
+     float: right;
+     background-color: #d03b40;
+     display: none;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     transition: 0.5s display;
+ }
+
+.nav__li{
+    color: #f5f0ed;
+}
+
+/*Botón*/
+ .button{
+    padding: 10px 30px;
+    margin-top: 50px;
+    border: 3px solid #f5f0ed;
+    display: inline-block;
+ }
+
+/*Features*/
+.features{
     background-color: #f5f0ed;
 }
 
-.seccion-features .caja-de-texto{
-    padding: 70px;
+.feature{
+    text-align: center;
+    margin: 40px 10%;
 }
 
-.feature img{
-    display: block;
-    margin: 0 auto 40px;
+.feature__img{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
 }
 
-/*Contacto*/
-.contacto{
-    background-color: #ded6c0;
-    color: #d03b40;
-    min-height: 700px;
-}
-
-.ubicacion{
-    color: #ded6c0;
-    background-color: #d03b40;
-    min-height: 700px;
+.feature__parrafo{
+    margin-top: 10px;
 }
 
 /*Footer*/
-footer{
-    background-color: #241d1b;
-    color: #f5f0ed;
-    padding: 30px;
+.footer{
+    padding: 20px 10px;
 }
 
-footer p{
-    margin: 0;
+.footer__parrafo{
     text-align: left;
 }
