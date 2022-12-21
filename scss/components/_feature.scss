@@ -11,10 +11,11 @@
 
   @media (min-width: breakpoints.$l) {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: flex-start;
     gap: 1rem;
     max-width: 40rem;
+    margin-bottom: 0;
     text-align: left;
   }
 

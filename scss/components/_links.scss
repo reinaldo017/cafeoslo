@@ -1,3 +1,50 @@
+@use "../base/breakpoints";
+@use "../base/colors";
+
 .links {
   display: none;
+
+  @media (min-width: breakpoints.$l) {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &--mobile {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    border-radius: 0.5rem;
+    padding: 2.5rem 0;
+    width: 100%;
+    max-width: 35rem;
+    background-color: colors.$beige;
+    text-align: center;
+  }
+
+  &--show {
+    display: block;
+
+    @media (min-width: breakpoints.$l) {
+      display: none;
+    }
+  }
+
+  &__li--mobile + &__li--mobile {
+    margin-top: 1rem;
+  }
+
+  &__a {
+    color: colors.$white;
+    font-weight: 700;
+
+    &--mobile {
+      color: colors.$red;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
