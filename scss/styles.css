@@ -188,6 +188,11 @@ select {
   background-color: #d03b40;
   color: #f5f0ed;
 }
+@media (min-width: 668px) {
+  .card {
+    width: 50%;
+  }
+}
 @media (min-width: 1200px) {
   .card {
     padding: 8rem 0;

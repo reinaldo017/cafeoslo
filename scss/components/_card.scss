@@ -9,6 +9,10 @@
   background-color: colors.$red;
   color: colors.$white;
 
+  @media (min-width: breakpoints.$m) {
+    width: 50%;
+  }
+
   @media (min-width: breakpoints.$l) {
     padding: 8rem 0;
   }
