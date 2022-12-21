@@ -1,0 +1,7 @@
+@use "../base/breakpoints";
+
+.info-section {
+  @media (min-width: breakpoints.$tablet-up) {
+    display: flex;
+  }
+}

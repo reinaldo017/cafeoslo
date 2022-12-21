@@ -1,0 +1,13 @@
+@mixin horizontal-alignment($justify-content, $align-item) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify-content;
+  align-items: $align-item;
+}
+
+@mixin vertical-alignment($justify-content, $align-item) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify-content;
+  align-items: $align-item;
+}

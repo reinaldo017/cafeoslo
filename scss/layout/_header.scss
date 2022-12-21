@@ -1,0 +1,32 @@
+@use "../base/colors";
+@use "../base/breakpoints";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../Imágenes/Fondo1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__text-container {
+    width: 85%;
+    max-width: 31.5rem;
+    margin: 0 auto;
+    text-align: center;
+    color: colors.$white;
+  }
+
+  &__title {
+    font-weight: 800;
+  }
+
+  hr {
+    width: 5.5rem;
+    margin: 2rem auto;
+    background-color: colors.$white;
+  }
+}

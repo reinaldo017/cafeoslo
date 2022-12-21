@@ -1,0 +1,19 @@
+@use "../base/colors";
+@use "../base/breakpoints";
+
+.footer {
+  padding: 3rem 0;
+  background-color: colors.$gray;
+  color: colors.$white;
+
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+
+    @media (min-width: breakpoints.$m) {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}

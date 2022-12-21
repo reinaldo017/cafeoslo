@@ -1,0 +1,32 @@
+@use "../base/breakpoints";
+
+.feature {
+  margin: 0 auto 2rem;
+  max-width: 27.5rem;
+
+  @media (min-width: breakpoints.$m) {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: breakpoints.$l) {
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 40rem;
+    text-align: left;
+  }
+
+  &__title {
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  &__icon {
+    // width: 4.75rem;
+    width: 23%;
+    // max-width: 6.75rem;
+    margin: 0 auto 0.75rem;
+  }
+}
