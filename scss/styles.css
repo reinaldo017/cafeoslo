@@ -276,7 +276,7 @@ select {
 
 .cta {
   padding: 6rem 0;
-  background: url("../../Imágenes/Fondo2.jpg");
+  background-image: url("../Imágenes/Fondo2.jpg");
   background-size: cover;
   color: #f5f0ed;
   text-align: center;
